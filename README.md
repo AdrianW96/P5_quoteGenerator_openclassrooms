@@ -1,1 +1,0 @@
-# P5_quoteGenerator_openclassrooms
