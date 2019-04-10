@@ -1,5 +1,7 @@
 html, body {
     height: 100%;
+    background-color: rgb(236, 251, 255);
+    font-family: 'EB Garamond', serif;
   }
   .container, .row.justify-content-center.align-items-center {
     height: 100%;
