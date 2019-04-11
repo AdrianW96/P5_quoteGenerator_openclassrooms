@@ -49,32 +49,36 @@ function generateFct() {
 document.querySelector('#factBtn').addEventListener('click', onClick);
 document.querySelector('#motBtn').addEventListener('click', onClick);
 
-
-// handler to generate quotes
-function onClick(e){
-    // Delete previous quotes before outputting new ones
+// Delete previous quotes before outputting new ones
+function clear() {
     while (list.firstChild) {
         list.removeChild(list.firstChild);
     }
-    // find out which (fact or motivational) button was clicked
-    let btnClicked = e.target.id;
-    if (btnClicked === 'factBtn') {
-        // generate that many fact quotes
-        for(i = 0; i < howMany; i++) {
-            let curQuote = generateFct();
-            const quoteElmt = document.createElement('p');
-            quoteElmt.className = 'rounded p-3 shadow-sm';
-            quoteElmt.innerText = curQuote;
-            list.appendChild(quoteElmt);
+}
+
+// generateQuotesLoop
+function generate(clickedBtn) {
+    for(i = 0; i < howMany; i++) {
+        if (clickedBtn=== 'factBtn') {
+            var curQuote = generateFct();
+        } else if (clickedBtn === 'motBtn') {
+            var curQuote = generateMot();
         }
-    } else if (btnClicked === 'motBtn'){
-        // generate that many fact quotes
-        for(i = 0; i < howMany; i++) {
-            let curQuote = generateMot();
-            const quoteElmt = document.createElement('p');
-            quoteElmt.className = 'rounded p-3 shadow-sm';
-            quoteElmt.innerText = curQuote;
-            list.appendChild(quoteElmt);
-        }
+        const quoteElmt = document.createElement('p');
+        quoteElmt.className = 'rounded p-3 shadow-sm';
+        quoteElmt.innerText = curQuote;
+        list.appendChild(quoteElmt);
     }
 }
+
+// handler to generate quotes
+function onClick(e){
+    clear();
+    // find out which (fact or motivational) button was clicked
+    let btnClicked = e.target.id;
+    generate(btnClicked);
+}
+
+document.querySelector('.clearBtn').firstElementChild.addEventListener('click', function() {
+    clear();
+})
