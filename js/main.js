@@ -1,12 +1,12 @@
 // motivational sentence parts
-const startMot = ['A successful person is', 'Try to be', 'Just take a step back and be', 'Without fear you will be'];
-const midMot = ['on time', 'curious about life', 'openminded', 'satisfied with what you have', 'enthusiastic', 'calm and relaxed'];
-const endMot = ['because it is a good virtue.', 'that\'s what makes things beautiful.', 'but not too much because that can be harmful.', 'that has the power to change lifes.'];
+const startMot = ['Think about being most of the time', 'Try to be', 'Take a step back and be', 'Without fear you will be', 'Think of yourself as a person who is'];
+const midMot = ['on time', 'curious about life', 'openminded', 'satisfied with what you have', 'enthusiastic', 'calm and relaxed', 'beautiful', 'attractive', 'a fish'];
+const endMot = ['because it is a good virtue.', 'that\ can make things awesome.', 'but not too much because that can hurt.', 'that has the power to change your life.', 'wouldn\'t that be awesome?'];
 
 //fact sentence parts
-const startFct = ['Drinking pineapple juice', 'Solving the rubiks cube 10 times a day', 'Barking like a dog'];
-const midFct = ['will make your legs longer', 'gives you a lasting boost of happiness', 'makes people around you scared'];
-const endFct =['so you can jump even higher!', 'so you will live a fulfilled life!', 'which can make you lose your teeth very fast.'];
+const startFct = ['Drinking pineapple juice', 'Solving the rubiks cube 10 times a day', 'Barking like a dog', 'Imagining to be able to fly'];
+const midFct = ['will make your legs longer', 'gives you a lasting boost of happiness', 'makes people around you scared', 'will lead you to financial success'];
+const endFct =['so you can jump even higher!', 'so you will live a fulfilled life!', 'which can make you lose your teeth very fast.', 'which was proven by a recent study from Stanford.'];
 
 // to store how many quotes the user wants to be generated
 let howMany = 1;
