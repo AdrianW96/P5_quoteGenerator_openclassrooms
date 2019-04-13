@@ -59,10 +59,11 @@ function clear() {
 // generateQuotesLoop
 function generate(clickedBtn) {
     for(i = 0; i < howMany; i++) {
+        let curQuote;
         if (clickedBtn=== 'factBtn') {
-            var curQuote = generateFct();
+            curQuote = generateFct();
         } else if (clickedBtn === 'motBtn') {
-            var curQuote = generateMot();
+            curQuote = generateMot();
         }
         const quoteElmt = document.createElement('p');
         quoteElmt.className = 'rounded p-3 shadow-sm';
