@@ -4,6 +4,7 @@ body {
   background-color: rgb(236, 251, 255);
   font-family: 'EB Garamond', serif;
 }
+
 .container,
 .row.justify-content-center.align-items-center {
   height: 100%;
@@ -14,8 +15,12 @@ p {
   border: 1px solid rgba(33, 0, 180, 0.171);
 }
 
+#factBtn {
+  min-width: 20%;
+}
+
 .clearBtn {
   position: fixed;
-  bottom: 15px;
+  top: 10px;
   right: 10px;
 }

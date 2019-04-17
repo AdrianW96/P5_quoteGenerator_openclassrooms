@@ -105,13 +105,6 @@ function generateFct() {
 document.querySelector('#factBtn').addEventListener('click', onClick);
 document.querySelector('#motBtn').addEventListener('click', onClick);
 
-// Delete previous quotes before outputting new ones
-function clear() {
-  while (list.firstChild) {
-    list.removeChild(list.firstChild);
-  }
-}
-
 // generateQuotesLoop
 function generate(clickedBtn) {
   for (i = 0; i < howMany; i++) {
@@ -141,3 +134,10 @@ document
   .firstElementChild.addEventListener('click', function() {
     clear();
   });
+
+// Delete previous quotes before outputting new ones
+function clear() {
+  while (list.firstChild) {
+    list.removeChild(list.firstChild);
+  }
+}
