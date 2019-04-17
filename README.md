@@ -10,4 +10,6 @@
 - Have the user choose _how many_ he wants to be generated (between 1 and 5)
 - Include a clear/quit button
 
+#### Feel free to try it out at: [GitHub Pages](https://adrianw96.github.io/P5_quoteGenerator_openclassrooms/)
+
 ###### Side note: I take no responsibility for the generated tips / outputs ;)
